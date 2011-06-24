@@ -84,3 +84,7 @@ download:
 	then echo $(LIB_PATH_SAMPLE_PROGRAM) already exists; \
 	else git clone git://github.com/statgen/libStatGen.git $(LIB_PATH_SAMPLE_PROGRAM); fi
 	$(MAKE) -C $(LIB_PATH_SAMPLE_PROGRAM) --no-print-directory all; \
+
+test: bin/$(EXE)
+	bin/$(EXE) --printExampleData >exampleData.dat
+	bin/$(EXE) <exampleData.dat >exampleDataOut.dat
