@@ -8,16 +8,16 @@
 void printExampleData(FILE *f)
 {
     fprintf(f, 
-"chr	loc	ref	alleles	snp.Q	av.max.map.Q	depth.cov	NA12891	NA12891.Q	NA12892	NA12892.Q	NA12878	NA12878.Q	hwe	maf	tdt	display\n\
-1	52066	t	t/c	64	92.33	36	T/T	29	C/T	65	C/T	64	NO-HWE	MAF-1	1TDT-1	tmp:1:52066\n\
-1	91549	a	a/g	76	82.67	89	A/A	79	A/G	71	A/G	67	NO-HWE	MAF-1	1TDT-1	tmp:1:91549\n\
-1	223336	c	c/g	100	90.67	70	C/G	100	C/C	56	C/G	100	NO-HWE	MAF-1	1TDT-1	tmp:1:223336\n\
-1	695745	g	g/a	97	89	57	A/G	100	G/G	44	A/G	100	NO-HWE	MAF-1	1TDT-1	tmp:1:695745\n\
-1	713754	g	g/c	57	89.33	73	C/C	76	C/C	44	C/C	68	NO-HWE	NO-MAF	NOTDT	rs2977670\n\
-1	724429	g	g/a	92	90.67	78	G/G	13	A/G	88	A/G	21	LOWQUAL	LOWQUAL	LOWQUAL	tmp:1:724429\n\
-1	742429	g	g/a	81	99	61	A/A	86	A/A	46	A/A	85	NO-HWE	NO-MAF	NOTDT	rs3094315\n\
-1	742584	a	a/g	100	97.33	86	G/G	82	G/G	83	G/G	100	NO-HWE	NO-MAF	NOTDT	rs3131972\n\
-1	744045	a	a/g	71	98	46	G/G	62	G/G	52	G/G	78	NO-HWE	NO-MAF	NOTDT	rs3131969\n\
+"chr\tloc\tref\talleles\tsnp.Q\tav.max.map.Q\tdepth.cov\tNA12891\tNA12891.Q\tNA12892\tNA12892.Q\tNA12878\tNA12878.Q\thwe\tmaf\ttdt\tdisplay\n\
+1\t52066\tt\tt/c\t64\t92.33\t36\tT/T\t29\tC/T\t65\tC/T\t64\tNO-HWE\tMAF-1\t1TDT-1\ttmp:1:52066\n\
+1\t91549\ta\ta/g\t76\t82.67\t89\tA/A\t79\tA/G\t71\tA/G\t67\tNO-HWE\tMAF-1\t1TDT-1\ttmp:1:91549\n\
+1\t223336\tc\tc/g\t100\t90.67\t70\tC/G\t100\tC/C\t56\tC/G\t100\tNO-HWE\tMAF-1\t1TDT-1\ttmp:1:223336\n\
+1\t695745\tg\tg/a\t97\t89\t57\tA/G\t100\tG/G\t44\tA/G\t100\tNO-HWE\tMAF-1\t1TDT-1\ttmp:1:695745\n\
+1\t713754\tg\tg/c\t57\t89.33\t73\tC/C\t76\tC/C\t44\tC/C\t68\tNO-HWE\tNO-MAF\tNOTDT\trs2977670\n\
+1\t724429\tg\tg/a\t92\t90.67\t78\tG/G\t13\tA/G\t88\tA/G\t21\tLOWQUAL\tLOWQUAL\tLOWQUAL\ttmp:1:724429\n\
+1\t742429\tg\tg/a\t81\t99\t61\tA/A\t86\tA/A\t46\tA/A\t85\tNO-HWE\tNO-MAF\tNOTDT\trs3094315\n\
+1\t742584\ta\ta/g\t100\t97.33\t86\tG/G\t82\tG/G\t83\tG/G\t100\tNO-HWE\tNO-MAF\tNOTDT\trs3131972\n\
+1\t744045\ta\ta/g\t71\t98\t46\tG/G\t62\tG/G\t52\tG/G\t78\tNO-HWE\tNO-MAF\tNOTDT\trs3131969\n\
 "
     );
     return;
