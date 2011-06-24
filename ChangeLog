@@ -3,30 +3,21 @@ This file contains the set of changes that have gone into this program.
 Be sure to enter the Author, date, and change description.
 
 -------------------------------------------------------------------------
-SampleProgram Changes:
+table2dbSNP Changes:
 -------------------------------------------------------------------------
 -------------------------------------------------------------------------
-Author: Mary Kate Trost
-Date:   May 25 2011
+Author: Paul Anderson
+Date:   June 24, 2011
+Change request from Tom Blackwell:
 
-    Update make download to check for the directory before attempting to clone.
-    Update make download to build the libStatGen directory.
-    Add the tgz release file to the .gitignore
-    Update Makefile to have information about disabling -I.
-    Add sample program to output a string
--------------------------------------------------------------------------
-Author: Mary Kate Trost
-Date:   May 19 2011
+Are you able to change 'table2dbSNP' for me so that it will take the SNP local
+identifier from a column in the input ? At present, the code automatically
+generates an identifier as it writes the "SNP:" line. 
 
-    Update the path to the source Makefile
 -------------------------------------------------------------------------
-Author: Mary Kate Trost
-Date:   May 18 2011
+Author: Paul Anderson
+Date:   June 24, 2011
 
-    Add .gitignore, Makefiles, and an obj directory.
--------------------------------------------------------------------------
-Author: Mary Kate Trost
-Date:   May 16 2011
-
-    Initial version with just a README.
+    Copy from old git repository, clean up a bit, make it work
+    with new makefile.
 -------------------------------------------------------------------------
