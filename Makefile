@@ -1,5 +1,5 @@
 # Name of your executable, replace sampleProgram with your program name
-EXE=sampleProgram
+EXE=table2dbSNP
 ########################
 # Specify your Files:
 # TOOLBASE - files with both .cpp and .h.  Just include the base name.
