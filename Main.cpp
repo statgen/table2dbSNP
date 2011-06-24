@@ -50,7 +50,7 @@ struct arguments {
         organism = "Homo sapiens";
         printExampleData = false;
         sampleSize = 4;
-        theReference = "/home/1000G/data/chromosomes5000.fa";
+        theReference = "/data/local/ref/karma.ref/human.g1k.v37.fa";
     }
     void writeHeader(FILE *);
     void usage(int argc, char **argv);
