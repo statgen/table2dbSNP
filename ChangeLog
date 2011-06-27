@@ -10,9 +10,37 @@ Author: Paul Anderson
 Date:   June 24, 2011
 Change request from Tom Blackwell:
 
+1:
+
 Are you able to change 'table2dbSNP' for me so that it will take the SNP local
 identifier from a column in the input ? At present, the code automatically
 generates an identifier as it writes the "SNP:" line. 
+
+2:
+
+A second request, while you're looking at the code:  could we change the
+condition for writing a "SNP_LINK:NCBI" line from:  "first two characters of
+"display:" column match "rs", to:    "display:" column not equals "."
+
+
+Further clarification from email Jun 27, 2011 (see
+db.snp.submit.182.sample.tab):
+
+Here's a very short excerpt from one of the tab delimited files I want to use
+for dbSNP submission.  The "SNP_LINK" line should be written from the column
+"display" when this is not ".".  (For my present purposes, I am writing "ss"
+numbers rather than "rs" numbers in the "SNP_LINK" column.)
+
+The "local_identifier" column supplies the <value> for the line
+"SNP:<handle>|<value>".  (This is the first row in each dbSNP record.)  For
+this submission I need to send to dbSNP exactly the same local identifiers I
+have used in prior submissions.
+
+The "#CHROM","loc","ref","alleles" columns should be read and processed as
+before.  The "rsid","phase1.indiv","phase1.depth" and "pop.avg.allele.freq"
+columns should produce extra rows in the "COMMENTS:" section of the dbSNP
+record, just as the program currently does.
+
 
 -------------------------------------------------------------------------
 Author: Paul Anderson
