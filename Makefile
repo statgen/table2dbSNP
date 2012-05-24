@@ -76,14 +76,14 @@ include $(LIB_PATH_SAMPLE_PROGRAM)/Makefiles/Makefile.src
 $(LIB_PATH_SAMPLE_PROGRAM)/Makefiles/Makefile.src:
 	@echo Unable to locate: $(LIB_PATH_SAMPLE_PROGRAM)/Makefiles/Makefile.src
 	@echo To change the location, set LIB_PATH_GENERAL or LIB_PATH_SAMPLE_PROGRAM to the appropriate path to libStatGen.  Or specify \"make LIB_PATH_GENERAL=yourPath\" or \"make LIB_PATH_SAMPLE_PROG=yourPath\"
-	@echo Use make download if you have git and want to download the current libStatGen to that location
+	@echo Use make cloneLib if you have git and want to clone the current libStatGen at that location.
 
 # Specify to download the statgen library from git (read-only)
-download:
+cloneLib:
 	@if test -d $(LIB_PATH_SAMPLE_PROGRAM); \
 	then echo $(LIB_PATH_SAMPLE_PROGRAM) already exists; \
 	else git clone git://github.com/statgen/libStatGen.git $(LIB_PATH_SAMPLE_PROGRAM); fi
-	$(MAKE) -C $(LIB_PATH_SAMPLE_PROGRAM) --no-print-directory all; \
+	@echo Call make to compile libStatGen and this tool.
 
 test: bin/$(EXE)
 	bin/$(EXE) --printExampleData >exampleData.dat
